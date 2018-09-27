@@ -71,11 +71,14 @@ p {
 	position: relative;
 	left: 38%;
 	padding: 2% 10px 10% 10px;
+	min-width: 50px;
+	min-height: 50px;
 }
 
 .social-media:hover {
-	width: 5%;
+	width: 5.3%;
 }
+
 
 /* Technologies Page */
 #technologies {
