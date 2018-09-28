@@ -1,0 +1,136 @@
+/* The grid layout */
+#header-top { grid-area: header; }
+#main-picture { grid-area: picture; }
+#side-content { grid-area: side; }
+#main-content { grid-area: main; }
+#history-content { grid-area: history; }
+#footer-bottom { grid-area: footer; }
+
+body {
+    background-image: url("background-image.png");
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'picture picture picture picture picture picture'
+    'main main main side side side'
+    'history history history history history history'
+    'footer footer footer footer footer footer';
+  margin: -8px;
+}
+.grid-container > div {
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Navigation Bar */
+
+#header-top {
+  padding: 5px 5px;
+  position: fixed;
+  background-color: #FDFDFD;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin-right: 1.5%;
+  float: right;
+  display: inline-block;
+}
+
+.nav-item {
+  float: left;
+}
+
+.nav-item .nav-class { 
+  text-decoration: none;
+  padding: 15px;
+  font-size: 20px;
+  color: black;
+}
+
+.nav-item .nav-class:hover {
+  color: orange;
+}
+
+h1 {
+  display: inline-block;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: lighter;
+  color: black;
+}
+
+h1:hover {
+  color: orange;
+}
+
+.home-logo {
+  margin-left: 10px;
+  width: 30px;
+  height: auto;
+  float: left;
+  margin: 12px 20px 10px 20px;
+}
+
+.bmw-text {
+  margin-left: 10px;
+}
+
+/* Opening Image */
+#main-picture {
+  
+}
+
+.m-power {
+  position: relative;
+  top: 80%;
+  left: 10%;
+  width: 10%;
+  height: auto;
+}
+
+.opening-img-class {
+  width: 100%;
+  height: auto;
+}
+
+/* Main Content */
+#main-content {
+  padding-top: 175px;
+
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Side Content */
+#side-content {
+  padding-top: 175px;
+}
+
+/* History */
+#history-content {
+  
+}
+
+/* Footer */
+.footer-bottom {
+  padding: 10px 10px;
+  background-color: #FDFDFD !important;
+
+}
+
+.foot-copyright {
+  font-size: 20px;
+  text-align: center;
+}
