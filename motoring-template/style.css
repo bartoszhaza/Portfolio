@@ -1,9 +1,7 @@
 /* The grid layout */
 #header-top { grid-area: header; }
 #main-picture { grid-area: picture; }
-#side-content { grid-area: side; }
-#main-content { grid-area: main; }
-#history-content { grid-area: history; }
+#welcome-message { grid-area: welcome; }
 #footer-bottom { grid-area: footer; }
 
 body {
@@ -12,11 +10,10 @@ body {
 .grid-container {
   display: grid;
   grid-template-areas:
-    'header header header header header header'
-    'picture picture picture picture picture picture'
-    'main main main side side side'
-    'history history history history history history'
-    'footer footer footer footer footer footer';
+    'header'
+    'picture'
+    'welcome'
+    'footer';
   margin: -8px;
 }
 .grid-container > div {
@@ -85,16 +82,30 @@ h1:hover {
 }
 
 /* Opening Image */
-#main-picture {
-  
-}
-
 .m-power {
   position: relative;
-  top: 80%;
+  top: 70%;
   left: 10%;
-  width: 10%;
+  width: 6%;
   height: auto;
+}
+
+.img-mpower {
+  height:auto;
+  width: 100%;
+}
+
+.down-div {
+  position: relative;
+  bottom: 18%;
+  left: 11%;
+  width: 4%;
+
+}
+
+.down-arrow {
+  height: auto;
+  width: 100%;
 }
 
 .opening-img-class {
@@ -104,23 +115,31 @@ h1:hover {
 
 /* Main Content */
 #main-content {
-  padding-top: 175px;
-
+  padding-top: 80px;
 }
 
-img {
-  width: 100%;
-  height: auto;
+h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: lighter;
 }
 
-/* Side Content */
-#side-content {
-  padding-top: 175px;
+p {
+  margin: 0 15% 0 15%;
+}
+
+/* Welcome Messgae */
+#welcome-message{
+  padding-top: 40px;
+}
+
+.front-paragraph {
+
 }
 
 /* History */
 #history-content {
-  
+  padding-top: 80px;
 }
 
 /* Footer */
@@ -131,6 +150,7 @@ img {
 }
 
 .foot-copyright {
+  margin: 40px 40px;
   font-size: 20px;
   text-align: center;
 }
