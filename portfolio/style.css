@@ -65,18 +65,21 @@ p {
 	margin-right: 28%;	
 }
 
+.formatting-logos {
+	text-align: center;
+}
+
 .social-media {
-	width: 5.5%;
+	width: 4.5%;
 	height: auto;
-	position: relative;
-	left: 38%;
-	padding: 2% 10px 10% 10px;
-	min-width: 50px;
-	min-height: 50px;
+	transition: transform .2s;
+	padding: 20px 5px 70px 5px;
+	min-width: 35px;
+	min-height: 35px;
 }
 
 .social-media:hover {
-	width: 5.3%;
+	transform: scale(1.2);
 }
 
 
