@@ -1,0 +1,205 @@
+/* The grid layout */
+#header-top { grid-area: header; }
+#main-picture { grid-area: picture; }
+#about-content { grid-area: main; }
+#technologies-content { grid-area: technologies; }
+#contact-me { grid-area: contact; }
+#footer-bottom { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header'
+    'picture'
+    'main'
+    'technologies'
+    'contact'
+    'footer';
+  margin: -8px;
+}
+
+.grid-container > div {
+  font-family: Courier New;
+  font-weight: lighter;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+#header-top {
+  padding: 5px 5px;
+  position: fixed;
+  background-color: #444;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin-right: 1.5%;
+  float: right;
+  display: inline-block;
+}
+
+.nav-container {
+  padding-right: 15px;
+}
+
+.nav-item {
+  float: left;
+}
+
+.nav-item .nav-class { 
+  text-decoration: none;
+  padding: 15px;
+  font-size: 20px;
+  color: white;
+}
+
+.nav-item .nav-class:hover {
+  color: #A9A9A9;
+}
+
+h1 {
+  display: inline-block;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: lighter;
+  color: white;
+}
+
+h1:hover {
+  color: #A9A9A9;
+}
+
+.home-logo {
+  margin-left: 10px;
+  width: 25px;
+  height: auto;
+  float: left;
+  margin: 18px 20px 10px 30px;
+}
+
+.bartosz-text {
+  margin-left: 10px;
+}
+
+/* Opening Image */
+
+#main-picture {
+  margin-bottom: -10px;
+}
+
+.arrow-container {
+  position: relative;
+  top: 85%;
+  left: 80%;
+  width: 4%;
+  height: auto;
+}
+
+.img-down-arrow {
+  height:auto;
+  width: 100%;
+  transition: transform .2s;
+}
+
+.img-down-arrow:hover {
+  transform: scale(1.2);
+}
+
+.opening-img-class {
+  width: 100%;
+  height: auto;
+  margin-top: -40px;
+}
+
+/* Main Content */
+#about-content {
+  padding-top: 100px;
+  background-color: #f3f3f3;
+}
+
+h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: lighter;
+
+}
+
+p {
+  margin: 0 30% 0 32%;
+  font-size: 18px;
+}
+
+.social-icon-container {
+  text-align: center;
+}
+
+.social-icons {
+  width: 5%;
+  height: auto;
+  padding: 30px 10px 40px 10px;
+  transition: transform .2s;
+  transition-duration: 1s;
+}
+
+.social-icons:hover {
+  transform: scale(1.3);
+}
+
+/* Technologies Content */
+#technolgoies-content {
+  background-color: white;
+  font-weight: lighter;
+}
+
+.tech-icon-container {
+  padding: 50px 50px;
+}
+
+.tech-icon {
+  text-align: center;
+
+}
+
+.tech-links {
+  width: 8%;
+  height: auto;
+  padding: 20px 10px 20px 10px;
+}
+
+h3 {
+  padding-top: 60px;
+  font-size: 40px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+h6 {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+/* Contact Me */
+#contact-me {
+  background-color: #f3f3f3;
+  padding-top: 40px;
+  text-align: center;
+}
+
+
+/* Footer */
+#footer-bottom {
+  background-color: #444;
+  padding: 40px 40px;
+  margin-bottom: -10px;
+}
+
+.foot-copyright {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
