@@ -3,6 +3,7 @@
 	<head>
 		<title>Bartosz Portfolio</title>
 		<link rel="stylesheet" href="style.css">
+		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
@@ -19,24 +20,18 @@
 			<!-- Navigation Bar -->
 			<div id="header-top">
 				<nav class="nav">
-					<div class="nav-container">
-						<a class="nav-logo" href="#main-picture"><img class="home-logo" src="images/home.jpg" alt="home logo"></a>
-						<a class="bartosz-text" href="#main-picture"><h1>&lt;!-- Bartosz Haza --&gt;</h1></a>
-						<ul>
-							<li class="nav-item">
-								<a class="nav-class" href="#about-content">About</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-class" href="#technologies-content">Technologies</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-class" href="#contact-me">Contact</a>
-							</li>
-						</ul>
+					<label for="toggle">&#9776;</label>
+					<input type="checkbox" id="toggle">
+					<a class="nav-logo" href="#main-picture"><img class="home-logo" src="images/home.jpg" alt="home logo"></a>
+					<a class="bartosz-text" href="#main-picture">Bartosz Haza</a>
+					<div class="menu">
+						<a class="nav-item" href="#about-content">About</a>
+						<a class="nav-item" href="#technologies-content">Technologies</a>
+						<a class="nav-item" href="#contact-me">Contact</a>
 					</div>
 				</nav>
 			</div>
-
+			
 			<!-- Main Content -->
 	  		<div id="about-content">
 	  			<h2>Hello...</h2>
@@ -76,7 +71,7 @@
 				<h2 id="contact-font">Contact Me!</h2>
       
      			 <!-- Contact Me Form -->
-      			<form action="mailto:bartosz@haza.com" method="post" enctype="text/plain">
+      			<form action="mailto:bartoszhaza@hotmail.com" method="post" enctype="text/plain">
 		        <div class="form-group">
 		          <label for="full-name"></label>
 		          <input type="name" class="form-control" id="full-name" placeholder="Full Name*" name="Name">
