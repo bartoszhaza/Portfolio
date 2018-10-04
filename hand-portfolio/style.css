@@ -57,6 +57,12 @@ ul {
   color: white;
 }
 
+@media only screen and (max-width: 1200px) {
+  .nav-item .nav-class {
+    padding: 0 20px 0 0;
+  }
+}
+
 .nav-item .nav-class:hover {
   color: #A9A9A9;
 }
@@ -133,6 +139,12 @@ p {
   font-size: 18px;
 }
 
+@media only screen and (max-width: 1200px) {
+  p {
+    margin: 0 4% 0 4%;
+  }
+}
+
 .social-icon-container {
   text-align: center;
 }
@@ -168,6 +180,8 @@ p {
   width: 8%;
   height: auto;
   padding: 20px 10px 20px 10px;
+  min-width: 50px;
+  min-height: 50px;
 }
 
 h3 {
@@ -190,7 +204,11 @@ h6 {
   text-align: center;
 }
 
-
+@media only screen and (max-width: 600px) {
+  h6 {
+    font-size: 15px;
+  }
+}
 /* Footer */
 #footer-bottom {
   background-color: #444;
@@ -203,3 +221,8 @@ h6 {
   text-align: center;
   color: white;
 }
+
+@media only screen and (max-width: 600px) {
+  .foot-copyright {
+    font-size: 16px;
+  }
