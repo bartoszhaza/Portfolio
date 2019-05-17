@@ -1,9 +1,13 @@
-
 /* Navigation Bar */
 .navbar {
 	background-color: #444 !important;
 	font-family: Courier New !important;
-	padding-right: 50px;
+}
+
+.nav-bartosz{
+	color: white !important;
+	text-decoration: none;
+	padding-left: 20px;
 }
 
 .nav-link {
@@ -12,12 +16,24 @@
 	color: white !important;
 }
 
-a:hover { 
-	color: #A9A9A9 !important;
+.nav-link:hover { 
+	color: #a6a6a6	!important;
+}
+
+.navbar-brand:hover {
+	transition: transform .3s;
+	transform: scale(1.1);
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+.img-down-arrow {
+	position: sticky;
+	width: 40px;
+	height: 40px;
+	margin: 100px 100px 100px 100px;
 }
 
 body {
@@ -32,13 +48,13 @@ body {
 .home-button {
 	width: auto;
 	height: 20px;
-	padding-right: 20px;
 }
 
 /* Front Cover */
 .image-size {
 	height: auto;
 	width: 100%;
+	position: static;
 }
 
 /* About Me Page */
@@ -72,14 +88,14 @@ p {
 .social-media {
 	width: 4.5%;
 	height: auto;
-	transition: transform .2s;
 	padding: 20px 5px 70px 5px;
 	min-width: 35px;
 	min-height: 35px;
 }
 
 .social-media:hover {
-	transform: scale(1.2);
+	transition: transform .3s;
+	transform: rotate(10deg);
 }
 
 /* Technologies Page */
@@ -103,15 +119,7 @@ p {
 	height: auto;
 	padding: 1% 10px 0px 10px;
 }
-/*
-.new-links {
-	width: 10%;
-	height: auto;
-	padding: 1% 10px 0px 10px;
-	position: relative;
-	left: 28.5%;
-}
-*/
+
 h6{
 	padding: 4% 0px 10px 0px;
 	text-align: center;
