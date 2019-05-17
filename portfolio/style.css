@@ -162,12 +162,22 @@ input:hover {
 /* Footer */
 .footers {
 	background-color: #444 !important;
-	padding: 40px 0 20px 0;	
+	padding: 40px 0 20px 0;
+	position: relative;
 }
 
 .footer-text {
 	color: #FFFF;
 	text-align: center;
+}
+
+.cv-template {
+	margin: 5%;
+}
+
+.cv-format {
+	width: 100%;
+	height: auto;
 }
 
 @media only screen and (max-width: 600px) {
